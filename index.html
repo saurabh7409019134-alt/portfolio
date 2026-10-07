@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh — AI Builder · Creator · Entrepreneur</title>
+  <meta name="description" content="Portfolio of Saurabh. AI Builder, Creator, and Entrepreneur building with AI and creating in public." />
+
+  <!-- Google Fonts: Clean modern sans-serif (Plus Jakarta Sans) & Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       REQUIRED SINGLE FIXED FULL-SCREEN BACKGROUND LAYER
+       - The ONE permanent background image for the entire website
+       - Person, chair, "Creativity", and handwritten notes on the right stay fixed
+       - ZERO blur (not blurred anywhere)
+       ========================================================================= -->
+  <div class="fixed-cinematic-bg" aria-hidden="true">
+    <img src="assets/hero-bg.jpg" alt="Cinematic Hero Background" />
+    <div class="fixed-cinematic-overlay"></div>
+  </div>
+
+  <!-- =========================================================================
+       FOREGROUND SCROLLING LAYER (z-index: 1)
+       Strictly on the LEFT side so the RIGHT side remains untouched
+       ========================================================================= -->
+  <div id="app-content">
+
+    <!-- SITE HEADER / NAVIGATION -->
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="#hero" class="brand-link" aria-label="Home">
+          <span class="brand-indicator"></span>
+          <span>SAURABH</span>
+        </a>
+
+        <ul class="nav-links-wrap">
+          <li><a href="#hero" class="nav-item-link active">Home</a></li>
+          <li><a href="#about" class="nav-item-link">About</a></li>
+          <li><a href="#work" class="nav-item-link">Work</a></li>
+          <li><a href="#process" class="nav-item-link">Process</a></li>
+          <li><a href="#contact" class="nav-item-link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-cta-btn">
+          <span>Let’s Talk</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN SCROLLING CONTENT (STRICTLY ON THE LEFT SIDE) -->
+    <main>
+
+      <!-- =====================================================================
+           HERO SECTION (PRESERVED UNCHANGED)
+           ===================================================================== -->
+      <section id="hero" class="section hero-section">
+        <div class="left-constrained-wrap">
+          <div class="hero-ui-container">
+
+            <!-- LARGE BOLD HEADING WITH WHITE-TO-BLUE GRADIENT -->
+            <h1 class="hero-name">SAURABH</h1>
+
+            <!-- SUBTITLE -->
+            <div class="hero-roles">
+              <span>AI Builder</span>
+              <span class="role-sep">·</span>
+              <span>Creator</span>
+              <span class="role-sep">·</span>
+              <span>Entrepreneur</span>
+            </div>
+
+            <!-- TWO-LINE READABLE BODY TEXT -->
+            <p class="hero-tagline">
+              Building with AI. Creating in public.<br />
+              Turning ideas into real products.
+            </p>
+
+            <!-- ROUNDED CTA BUTTONS -->
+            <div class="hero-btn-row">
+              <a href="#work" class="btn-work">
+                <span>View My Work</span>
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <a href="#contact" class="btn-connect">
+                <span>Let’s Connect</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- SOCIAL BUTTONS AT THE BOTTOM -->
+            <div class="hero-social-row">
+              <!-- Instagram Pill -->
+              <a href="https://www.instagram.com/saurabhx.ai?stkn=b3Z6OHNrbTNiaXFu" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <defs>
+                    <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#fdf497"/>
+                      <stop offset="25%" stop-color="#fd5949"/>
+                      <stop offset="60%" stop-color="#d6249f"/>
+                      <stop offset="100%" stop-color="#285AEB"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="url(#ig-grad)" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4.5" stroke="url(#ig-grad)" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="url(#ig-grad)"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+
+              <!-- YouTube Pill -->
+              <a href="https://youtube.com/@saurabhx_ai?si=Qyn8HQ5orB0owVK5" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="YouTube">
+                <svg width="20" height="15" viewBox="0 0 24 17" fill="none">
+                  <path d="M23.5 2.6a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.5A3 3 0 0 0 .5 2.6 31.4 31.4 0 0 0 0 8.5a31.4 31.4 0 0 0 .5 5.9 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1 31.4 31.4 0 0 0 .5-5.9 31.4 31.4 0 0 0-.5-5.9z" fill="#FF0000"/>
+                  <polygon points="9.6 12.1 15.8 8.5 9.6 4.9 9.6 12.1" fill="#FFFFFF"/>
+                </svg>
+                <span>YouTube</span>
+              </a>
+
+              <!-- LinkedIn Pill -->
+              <a href="https://www.linkedin.com/in/saurabh-1939373a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                  <path d="M7.1 9.5H4.2V19H7.1V9.5ZM5.6 4.8C4.7 4.8 4 5.5 4 6.4C4 7.3 4.7 8 5.6 8C6.5 8 7.2 7.3 7.2 6.4C7.2 5.5 6.5 4.8 5.6 4.8ZM19.8 13.6C19.8 10.7 18.2 9.3 16.1 9.3C14.4 9.3 13.6 10.3 13.2 11V9.5H10.3V19H13.2V14.1C13.2 12.8 13.5 11.6 15 11.6C16.6 11.6 16.7 13.1 16.7 14.2V19H19.7L19.8 13.6Z" fill="#FFFFFF"/>
+                </svg>
+                <span>Saurabh</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           01 — ABOUT
+           ===================================================================== -->
+      <section id="about" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">01 — ABOUT</div>
+          <h2 class="section-title">
+            Building the future,<br />
+            one idea at a time.
+          </h2>
+
+          <div class="about-paragraphs">
+            <p>
+              I'm Saurabh — an AI-focused builder, creator, and entrepreneur exploring the intersection of artificial intelligence, automation, content, and product development.
+            </p>
+            <p>
+              I turn ideas into useful products, systems, and experiences by combining technology, creativity, and experimentation.
+            </p>
+          </div>
+
+          <!-- Flow: AI → IDEAS → PRODUCTS → SYSTEMS → GROWTH -->
+          <div class="flow-chain" aria-label="Core progression flow">
+            <div class="flow-item">
+              <div class="flow-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
+                </svg>
+              </div>
+              <span class="flow-label">AI</span>
+            </div>
+
+            <span class="flow-arrow">→</span>
+
+            <div class="flow-item">
+              <div class="flow-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <span class="flow-label">IDEAS</span>
+            </div>
+
+            <span class="flow-arrow">→</span>
+
+            <div class="flow-item">
+              <div class="flow-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="flow-label">PRODUCTS</span>
+            </div>
+
+            <span class="flow-arrow">→</span>
+
+            <div class="flow-item">
+              <div class="flow-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <span class="flow-label">SYSTEMS</span>
+            </div>
+
+            <span class="flow-arrow">→</span>
+
+            <div class="flow-item">
+              <div class="flow-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="flow-label">GROWTH</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           02 — WHAT I DO
+           ===================================================================== -->
+      <section id="services" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">02 — WHAT I DO</div>
+          <h2 class="section-title">From ideas to execution.</h2>
+          <p class="section-desc">
+            I use AI, technology and creativity to build things that actually move forward.
+          </p>
+
+          <div class="services-grid-4">
+            <!-- 01 BUILD -->
+            <div class="service-pill-card">
+              <div>
+                <div class="card-head">
+                  <span class="service-num">01</span>
+                  <span class="service-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="service-heading">BUILD</h3>
+                <p class="service-sub">AI Products & Digital Experiences</p>
+              </div>
+              <div class="service-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+
+            <!-- 02 AUTOMATE -->
+            <div class="service-pill-card">
+              <div>
+                <div class="card-head">
+                  <span class="service-num">02</span>
+                  <span class="service-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="service-heading">AUTOMATE</h3>
+                <p class="service-sub">AI Automation & Intelligent Systems</p>
+              </div>
+              <div class="service-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+
+            <!-- 03 CREATE -->
+            <div class="service-pill-card">
+              <div>
+                <div class="card-head">
+                  <span class="service-num num-purple">03</span>
+                  <span class="service-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M23 7l-7 5 7 5V7z"></path>
+                      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="service-heading">CREATE</h3>
+                <p class="service-sub">Content & Personal Branding</p>
+              </div>
+              <div class="service-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+
+            <!-- 04 GROW -->
+            <div class="service-pill-card">
+              <div>
+                <div class="card-head">
+                  <span class="service-num">04</span>
+                  <span class="service-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                      <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="service-heading">GROW</h3>
+                <p class="service-sub">Strategy & Digital Growth</p>
+              </div>
+              <div class="service-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           03 — SELECTED WORK
+           ===================================================================== -->
+      <section id="work" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">03 — SELECTED WORK</div>
+          <h2 class="section-title">Things I've built.</h2>
+          <p class="section-desc">
+            A collection of products, experiments, brands and digital experiences.
+          </p>
+
+          <div class="work-grid-3">
+            <!-- KEEPIT -->
+            <div class="project-card">
+              <div>
+                <h3 class="project-name">KEEPIT</h3>
+                <p class="project-tagline">Habit tracking made simple.</p>
+                <div class="badge-row">
+                  <span class="tag-badge">Product</span>
+                  <span class="tag-badge">AI</span>
+                  <span class="tag-badge">UI/UX</span>
+                </div>
+                <div class="project-visual">
+                  <img src="assets/keepit.png" alt="KEEPIT habit tracking interface" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-card-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+
+            <!-- SPARKOS -->
+            <div class="project-card">
+              <div>
+                <h3 class="project-name">SPARKOS</h3>
+                <p class="project-tagline">AI-powered growth and automation agency.</p>
+                <div class="badge-row">
+                  <span class="tag-badge">Brand</span>
+                  <span class="tag-badge">AI</span>
+                  <span class="tag-badge">Automation</span>
+                </div>
+                <div class="project-visual">
+                  <img src="assets/sparkos.png" alt="SPARKOS AI growth and automation agency" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-card-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+
+            <!-- PATHAI -->
+            <div class="project-card">
+              <div>
+                <h3 class="project-name">PATHAI</h3>
+                <p class="project-tagline">A smarter way to discover your career direction.</p>
+                <div class="badge-row">
+                  <span class="tag-badge">AI</span>
+                  <span class="tag-badge">Product</span>
+                  <span class="tag-badge">UX</span>
+                </div>
+                <div class="project-visual">
+                  <img src="assets/pathai.jpg" alt="PATHAI career direction discovery" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-card-bottom">
+                <span class="card-arrow-circle">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           04 — PROCESS
+           ===================================================================== -->
+      <section id="process" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">04 — PROCESS</div>
+          <h2 class="section-title">Ideas don't build themselves.</h2>
+          <p class="section-desc">
+            A simple process to turn ideas into real products and experiences.
+          </p>
+
+          <div class="process-flow-5" aria-label="Process steps">
+            <!-- 01 THINK -->
+            <div class="process-node">
+              <div class="node-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
+                </svg>
+              </div>
+              <span class="node-step">01</span>
+              <h3 class="node-title">THINK</h3>
+              <p class="node-desc">Find the problem worth solving.</p>
+            </div>
+
+            <span class="process-arrow">→</span>
+
+            <!-- 02 EXPLORE -->
+            <div class="process-node">
+              <div class="node-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <span class="node-step">02</span>
+              <h3 class="node-title">EXPLORE</h3>
+              <p class="node-desc">Research. Experiment. Question.</p>
+            </div>
+
+            <span class="process-arrow">→</span>
+
+            <!-- 03 BUILD -->
+            <div class="process-node">
+              <div class="node-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="node-step">03</span>
+              <h3 class="node-title">BUILD</h3>
+              <p class="node-desc">Turn the concept into something real.</p>
+            </div>
+
+            <span class="process-arrow">→</span>
+
+            <!-- 04 ITERATE -->
+            <div class="process-node">
+              <div class="node-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <span class="node-step">04</span>
+              <h3 class="node-title">ITERATE</h3>
+              <p class="node-desc">Test. Improve. Repeat.</p>
+            </div>
+
+            <span class="process-arrow">→</span>
+
+            <!-- 05 SHIP -->
+            <div class="process-node">
+              <div class="node-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <span class="node-step">05</span>
+              <h3 class="node-title">SHIP</h3>
+              <p class="node-desc">Put it into the world.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           05 — CREATING IN PUBLIC
+           ===================================================================== -->
+      <section id="public" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">05 — CREATING IN PUBLIC</div>
+          <h2 class="section-title">
+            Building. Learning. Sharing.
+          </h2>
+          <p class="section-desc">
+            I share my journey, experiments, insights and behind-the-scenes across different platforms.
+          </p>
+
+          <div class="public-cards-3">
+            <!-- INSTAGRAM -->
+            <div class="public-platform-card">
+              <div>
+                <div class="platform-icon-wrap">
+                  <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+                    <defs>
+                      <linearGradient id="ig-grad-card" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#fdf497"/>
+                        <stop offset="25%" stop-color="#fd5949"/>
+                        <stop offset="60%" stop-color="#d6249f"/>
+                        <stop offset="100%" stop-color="#285AEB"/>
+                      </linearGradient>
+                    </defs>
+                    <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="url(#ig-grad-card)" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="4.5" stroke="url(#ig-grad-card)" stroke-width="2"/>
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="url(#ig-grad-card)"/>
+                  </svg>
+                </div>
+                <h3 class="platform-name">Instagram</h3>
+                <p class="platform-topics">AI · Tech · Business</p>
+              </div>
+              <a href="https://www.instagram.com/saurabhx.ai?stkn=b3Z6OHNrbTNiaXFu" target="_blank" rel="noopener noreferrer" class="platform-btn">
+                <span>Follow</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- YOUTUBE -->
+            <div class="public-platform-card">
+              <div>
+                <div class="platform-icon-wrap">
+                  <svg width="34" height="26" viewBox="0 0 24 17" fill="none">
+                    <path d="M23.5 2.6a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.5A3 3 0 0 0 .5 2.6 31.4 31.4 0 0 0 0 8.5a31.4 31.4 0 0 0 .5 5.9 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1 31.4 31.4 0 0 0 .5-5.9 31.4 31.4 0 0 0-.5-5.9z" fill="#FF0000"/>
+                    <polygon points="9.6 12.1 15.8 8.5 9.6 4.9 9.6 12.1" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <h3 class="platform-name">YouTube</h3>
+                <p class="platform-topics">Builds · Experiments · Tutorials</p>
+              </div>
+              <a href="https://youtube.com/@saurabhx_ai?si=Qyn8HQ5orB0owVK5" target="_blank" rel="noopener noreferrer" class="platform-btn">
+                <span>Watch</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- LINKEDIN -->
+            <div class="public-platform-card">
+              <div>
+                <div class="platform-icon-wrap">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                    <path d="M7.1 9.5H4.2V19H7.1V9.5ZM5.6 4.8C4.7 4.8 4 5.5 4 6.4C4 7.3 4.7 8 5.6 8C6.5 8 7.2 7.3 7.2 6.4C7.2 5.5 6.5 4.8 5.6 4.8ZM19.8 13.6C19.8 10.7 18.2 9.3 16.1 9.3C14.4 9.3 13.6 10.3 13.2 11V9.5H10.3V19H13.2V14.1C13.2 12.8 13.5 11.6 15 11.6C16.6 11.6 16.7 13.1 16.7 14.2V19H19.7L19.8 13.6Z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <h3 class="platform-name">LinkedIn</h3>
+                <p class="platform-topics">Ideas · Lessons · Building</p>
+              </div>
+              <a href="https://www.linkedin.com/in/saurabh-1939373a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="platform-btn">
+                <span>Connect</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           06 — NOW
+           ===================================================================== -->
+      <section id="now" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">06 — NOW</div>
+          <h2 class="section-title">What I'm building right now.</h2>
+
+          <div class="now-cards-2">
+            <!-- KEEPIT -->
+            <div class="now-card">
+              <div>
+                <div class="now-card-top">
+                  <div class="now-icon-box box-green">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                      <path d="M9 16l2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div class="now-titles">
+                    <h3 class="now-name">KEEPIT</h3>
+                    <p class="now-desc">Habit tracking, redesigned for consistency.</p>
+                  </div>
+                  <span class="status-pill-badge badge-gold">Coming Soon</span>
+                </div>
+              </div>
+              <div class="now-badge-row">
+                <span class="tag-badge">Product</span>
+                <span class="tag-badge">AI</span>
+                <span class="tag-badge">Mobile</span>
+              </div>
+            </div>
+
+            <!-- SPARKOS -->
+            <div class="now-card">
+              <div>
+                <div class="now-card-top">
+                  <div class="now-icon-box box-purple">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                  </div>
+                  <div class="now-titles">
+                    <h3 class="now-name">SPARKOS</h3>
+                    <p class="now-desc">AI-powered content, automation and growth.</p>
+                  </div>
+                  <span class="status-pill-badge badge-blue">Building</span>
+                </div>
+              </div>
+              <div class="now-badge-row">
+                <span class="tag-badge">Agency</span>
+                <span class="tag-badge">AI</span>
+                <span class="tag-badge">Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           07 — BEYOND THE WORK
+           ===================================================================== -->
+      <section id="beyond" class="section">
+        <div class="left-constrained-wrap">
+          <div class="section-tag">07 — BEYOND THE WORK</div>
+          <h2 class="beyond-statement">
+            CURIOUS BY NATURE.<br />
+            BUILDER BY CHOICE.<br />
+            CREATOR BY HABIT.
+          </h2>
+
+          <div class="beyond-cols-4">
+            <!-- AI -->
+            <div class="beyond-col">
+              <div class="beyond-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
+                </svg>
+              </div>
+              <h3 class="beyond-pillar-title">AI</h3>
+              <p class="beyond-pillar-text">Exploring what becomes possible when intelligence meets creativity.</p>
+            </div>
+
+            <!-- PRODUCTS -->
+            <div class="beyond-col">
+              <div class="beyond-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="beyond-pillar-title">PRODUCTS</h3>
+              <p class="beyond-pillar-text">Turning ideas into things people can actually use.</p>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="beyond-col">
+              <div class="beyond-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 7l-7 5 7 5V7z"></path>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <h3 class="beyond-pillar-title">CONTENT</h3>
+              <p class="beyond-pillar-text">Sharing the process instead of waiting for perfection.</p>
+            </div>
+
+            <!-- ENTREPRENEURSHIP -->
+            <div class="beyond-col">
+              <div class="beyond-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="beyond-pillar-title">ENTREPRENEURSHIP</h3>
+              <p class="beyond-pillar-text">Learning by building in the real world.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           08 — LET'S BUILD
+           ===================================================================== -->
+      <section id="contact" class="section">
+        <div class="left-constrained-wrap">
+          <div class="cta-banner-wrapper">
+            <div class="cta-banner-left">
+              <h2 class="cta-banner-heading">
+                HAVE AN IDEA?<br />
+                LET’S BUILD IT.
+              </h2>
+            </div>
+
+            <div class="cta-banner-right">
+              <p class="cta-banner-text">
+                Product, AI system, creative project, automation or simply an idea worth exploring.
+              </p>
+
+              <div class="cta-banner-btns">
+                <a href="mailto:hello@saurabh.design" class="btn-work">
+                  <span>Let’s Connect</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <a href="#work" class="btn-connect">
+                  <span>View My Work</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =====================================================================
+         FOOTER
+         ===================================================================== -->
+    <footer id="footer" class="site-footer">
+      <div class="left-constrained-wrap">
+        <div class="footer-inner-flex">
+          <div class="footer-brand-block">
+            <div class="footer-brand-title">SAURABH</div>
+            <div class="footer-brand-subtitle">AI Builder · Creator · Entrepreneur</div>
+            <div class="footer-brand-keywords">Ideas · Products · Systems · Growth</div>
+          </div>
+
+          <ul class="footer-nav-center">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="footer-right-block">
+            <div class="footer-social-icons">
+              <a href="https://www.instagram.com/saurabhx.ai?stkn=b3Z6OHNrbTNiaXFu" target="_blank" rel="noopener noreferrer" class="footer-social-pill" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </a>
+              <a href="https://youtube.com/@saurabhx_ai?si=Qyn8HQ5orB0owVK5" target="_blank" rel="noopener noreferrer" class="footer-social-pill" aria-label="YouTube">
+                <svg width="16" height="12" viewBox="0 0 24 17" fill="none">
+                  <path d="M23.5 2.6a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.5A3 3 0 0 0 .5 2.6 31.4 31.4 0 0 0 0 8.5a31.4 31.4 0 0 0 .5 5.9 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1 31.4 31.4 0 0 0 .5-5.9 31.4 31.4 0 0 0-.5-5.9z" fill="#FF0000"/>
+                  <polygon points="9.6 12.1 15.8 8.5 9.6 4.9 9.6 12.1" fill="#FFFFFF"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/saurabh-1939373a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="footer-social-pill" aria-label="LinkedIn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                  <path d="M7.1 9.5H4.2V19H7.1V9.5ZM5.6 4.8C4.7 4.8 4 5.5 4 6.4C4 7.3 4.7 8 5.6 8C6.5 8 7.2 7.3 7.2 6.4C7.2 5.5 6.5 4.8 5.6 4.8ZM19.8 13.6C19.8 10.7 18.2 9.3 16.1 9.3C14.4 9.3 13.6 10.3 13.2 11V9.5H10.3V19H13.2V14.1C13.2 12.8 13.5 11.6 15 11.6C16.6 11.6 16.7 13.1 16.7 14.2V19H19.7L19.8 13.6Z" fill="#FFFFFF"/>
+                </svg>
+              </a>
+            </div>
+            <div class="footer-copy-text">
+              © 2026 Saurabh<br />
+              Built with AI & curiosity.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
