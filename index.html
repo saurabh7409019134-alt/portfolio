@@ -2,7 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Adaptive Viewport: Ensures phones and tablets render the exact same cinematic layout as laptop -->
+  <meta name="viewport" content="width=1024, user-scalable=yes, viewport-fit=cover" id="viewportMeta" />
+  <script>
+    (function() {
+      function adjustViewport() {
+        var meta = document.getElementById('viewportMeta');
+        if (!meta) return;
+        var sw = window.screen.width;
+        var target = 1024;
+        if (sw < target) {
+          var scale = (sw / target).toFixed(4);
+          meta.setAttribute('content', 'width=' + target + ', initial-scale=' + scale + ', minimum-scale=' + (scale * 0.75).toFixed(4) + ', maximum-scale=3.0, user-scalable=yes, viewport-fit=cover');
+        } else {
+          meta.setAttribute('content', 'width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover');
+        }
+      }
+      adjustViewport();
+      window.addEventListener('resize', adjustViewport);
+      window.addEventListener('orientationchange', adjustViewport);
+    })();
+  </script>
   <title>Saurabh — AI Builder · Creator · Entrepreneur</title>
   <meta name="description" content="Portfolio of Saurabh. AI Builder, Creator, and Entrepreneur building with AI and creating in public." />
 

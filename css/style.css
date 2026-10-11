@@ -52,6 +52,7 @@ html {
 
 body {
   min-height: 100vh;
+  min-width: 1000px;
   position: relative;
   overflow-x: hidden;
   background-color: var(--color-bg-deep);
@@ -98,7 +99,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 96% center; /* Ensures person & notes are always in view across phone, tablet, and laptop */
   display: block;
 }
 
@@ -124,6 +125,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
+  min-width: 1000px;
 }
 
 .left-constrained-wrap {
@@ -1120,61 +1122,13 @@ body {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN
+   UNIFIED CROSS-DEVICE EXPERIENCE (LAPTOP, TABLET & PHONE)
+   Preserves the exact same cinematic layout, multi-column cards,
+   and stationary right-side subject across all devices.
    ========================================================================== */
 @media (max-width: 1024px) {
   :root {
-    --left-column-max-width: 680px;
-  }
-  .work-grid-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .public-cards-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .beyond-cols-4 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  :root {
-    --left-column-max-width: 100%;
-    --left-column-margin-left: 1.25rem;
-  }
-  .left-constrained-wrap {
-    padding-right: 1.25rem;
-  }
-  .services-grid-4 {
-    grid-template-columns: 1fr;
-  }
-  .work-grid-3 {
-    grid-template-columns: 1fr;
-  }
-  .public-cards-3 {
-    grid-template-columns: 1fr;
-  }
-  .now-cards-2 {
-    grid-template-columns: 1fr;
-  }
-  .beyond-cols-4 {
-    grid-template-columns: 1fr;
-  }
-  .cta-banner-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .nav-links-wrap {
-    display: none;
-  }
-  .footer-inner-flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer-right-block {
-    align-items: flex-start;
-  }
-  .footer-copy-text {
-    text-align: left;
+    --left-column-max-width: 660px;
+    --left-column-margin-left: 2rem;
   }
 }
