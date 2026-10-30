@@ -1,0 +1,31 @@
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backend, server scripts, and local developer configs
+server.py
+firebase.json
+.firebaserc
+firestore.rules
+functions/
+data/
+*.log
+
+# Sensitive credentials & environment files
+.env
+.env.*
+*.pem
+*.key
+*.cert
+service-account*.json
+firebase-debug.log*
+firestore-debug.log*
+
+# Root level raw media / download scratch files (production assets are organized inside assets/)
+*.mp4
+!assets/videos/*.mp4
